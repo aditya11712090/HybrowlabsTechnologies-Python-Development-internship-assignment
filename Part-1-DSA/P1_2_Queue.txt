@@ -1,0 +1,11 @@
+To implement the queue data structure in Python, I used a linked list to store the elements of the queue. The linked list consists of nodes, where each node stores the value of an element in the queue and a pointer to the next node in the list.
+
+To add an item to the queue (enqueue), I simply create a new node at the end of the linked list and update the rear pointer to point to this new node. To remove an item from the queue (dequeue), I remove the front node from the linked list and update the front pointer to point to the next node in the list.
+
+To support other operations like peeking at the front element and checking if the queue is empty, I simply access the appropriate values stored in the front node or check if the front pointer is None.
+
+To take the size of the queue from the user, I added a size parameter to the constructor of the Queue class. I also added a count variable to keep track of the number of elements in the queue, so that I can prevent the queue from overflowing or underflowing.
+
+For the user interface, I used a while loop to repeatedly ask the user for the operation to perform, and used switch cases (if/elif statements) to perform the corresponding operations. I also added input prompts and print statements to provide feedback to the user.
+
+One trade-off that I made in this implementation is that it requires more memory than an array-based implementation, since each node in the linked list requires additional memory to store the next pointer. However, linked lists have the advantage of efficient dynamic memory management and constant-time complexity for adding or removing elements at the front or back, making them well-suited for implementing queues.

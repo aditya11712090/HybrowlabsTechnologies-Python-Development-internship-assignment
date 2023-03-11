@@ -1,0 +1,5 @@
+First, I remove all spaces from both strings and convert them to lowercase to ensure that case and space differences do not affect the anagram check. Then, I compare the lengths of both strings to check if they are equal; if not, I return False, as two strings of different lengths cannot be anagrams.
+
+To count the frequency of each character in both strings, I create two dictionaries, freq1 and freq2, respectively, and iterate through each character in both strings, counting their frequency by updating the dictionaries. Finally, I compare the two dictionaries and return True if they are equal, indicating that both strings are anagrams.
+
+One potential trade-off of my approach is the use of extra memory to store two separate dictionaries, which can be inefficient for large strings. However, I believe it provides a simple and efficient way to count the frequency of characters and compare them. Another potential trade-off is the use of the replace method to remove spaces, which can be time-consuming for very long strings. Overall, I think my approach is effective and provides a good balance between simplicity and efficiency.

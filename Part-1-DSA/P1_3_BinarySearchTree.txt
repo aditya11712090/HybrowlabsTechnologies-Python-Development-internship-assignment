@@ -1,0 +1,9 @@
+In this program, I implemented a Binary Search Tree data structure in Python using a class-based approach. The class has four main methods: insert, search, delete, and size, which allow the user to add elements to the BST, search for elements in the BST, remove elements from the BST, and get the number of elements in the BST, respectively. I also added a display method to print out the contents of the BST in in-order traversal.
+
+In addition to the BST class, I also implemented a simple menu interface using a while loop and switch case statements, allowing the user to interact with the BST and perform various operations such as inserting, searching, and deleting elements, as well as getting the size of the BST and displaying its contents.
+
+One of the main trade-offs in this implementation is space complexity. Since this is an implementation of a binary search tree, each node contains a value and two pointers to its left and right children. This means that the amount of memory required to store the tree will grow proportionally to the number of elements added to the tree. This can be an issue if the tree grows very large and memory usage becomes a concern.
+
+Another trade-off is time complexity. The time complexity of the operations in this implementation depends on the height of the tree. In the worst case, where the tree is a skewed tree with only one branch, the time complexity of the insert, search, and delete operations can be O(n), where n is the number of elements in the tree. However, in the average case, the time complexity of these operations is O(log n), making them relatively efficient.
+
+Overall, this implementation of a Binary Search Tree in Python provides a simple and intuitive way to interact with a BST and perform various operations on it, but it is important to keep in mind the space and time complexity trade-offs involved when working with large trees.
